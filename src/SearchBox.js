@@ -1,9 +1,13 @@
 import React from 'react'
 
-const SearchBox = () =>{
+const SearchBox = ({searchField, searchChange}) =>{
     
     return(
-        <input type='search' placeholder='Search Robot'/>
+        <input 
+            type='search' 
+            placeholder='Search Robot'
+            onChange={searchChange}
+        />
     )
 
 }
